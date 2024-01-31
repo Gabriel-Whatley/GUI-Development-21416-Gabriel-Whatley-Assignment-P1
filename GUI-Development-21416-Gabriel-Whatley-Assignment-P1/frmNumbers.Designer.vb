@@ -28,20 +28,23 @@ Partial Class frmNumbers
         btnThree = New Button()
         btnFour = New Button()
         btnFive = New Button()
+        btnExit = New Button()
+        textBoxFrench = New TextBox()
         SuspendLayout()
         ' 
         ' lblFrench
         ' 
         lblFrench.AutoSize = True
-        lblFrench.Location = New Point(226, 52)
+        lblFrench.Location = New Point(85, 9)
         lblFrench.Name = "lblFrench"
         lblFrench.Size = New Size(259, 45)
         lblFrench.TabIndex = 0
         lblFrench.Text = "Do you know the French words for the numbers" & vbCrLf & "1 through 5?" & vbCrLf & "Click the buttons below to see them."
+        lblFrench.TextAlign = ContentAlignment.TopCenter
         ' 
         ' btnOne
         ' 
-        btnOne.Location = New Point(53, 108)
+        btnOne.Location = New Point(14, 66)
         btnOne.Name = "btnOne"
         btnOne.Size = New Size(75, 23)
         btnOne.TabIndex = 1
@@ -50,7 +53,7 @@ Partial Class frmNumbers
         ' 
         ' btnTwo
         ' 
-        btnTwo.Location = New Point(134, 108)
+        btnTwo.Location = New Point(95, 66)
         btnTwo.Name = "btnTwo"
         btnTwo.Size = New Size(75, 23)
         btnTwo.TabIndex = 2
@@ -59,7 +62,7 @@ Partial Class frmNumbers
         ' 
         ' btnThree
         ' 
-        btnThree.Location = New Point(215, 108)
+        btnThree.Location = New Point(176, 66)
         btnThree.Name = "btnThree"
         btnThree.Size = New Size(75, 23)
         btnThree.TabIndex = 3
@@ -68,7 +71,7 @@ Partial Class frmNumbers
         ' 
         ' btnFour
         ' 
-        btnFour.Location = New Point(296, 108)
+        btnFour.Location = New Point(257, 66)
         btnFour.Name = "btnFour"
         btnFour.Size = New Size(75, 23)
         btnFour.TabIndex = 4
@@ -77,18 +80,38 @@ Partial Class frmNumbers
         ' 
         ' btnFive
         ' 
-        btnFive.Location = New Point(377, 108)
+        btnFive.Location = New Point(338, 66)
         btnFive.Name = "btnFive"
         btnFive.Size = New Size(75, 23)
         btnFive.TabIndex = 5
         btnFive.Text = "5"
         btnFive.UseVisualStyleBackColor = True
         ' 
+        ' btnExit
+        ' 
+        btnExit.Location = New Point(176, 149)
+        btnExit.Name = "btnExit"
+        btnExit.Size = New Size(75, 23)
+        btnExit.TabIndex = 6
+        btnExit.Text = "Exit"
+        btnExit.UseVisualStyleBackColor = True
+        ' 
+        ' textBoxFrench
+        ' 
+        textBoxFrench.BackColor = Color.FromArgb(CByte(255), CByte(128), CByte(0))
+        textBoxFrench.Location = New Point(176, 107)
+        textBoxFrench.Name = "textBoxFrench"
+        textBoxFrench.Size = New Size(75, 23)
+        textBoxFrench.TabIndex = 7
+        textBoxFrench.Visible = False
+        ' 
         ' frmNumbers
         ' 
         AutoScaleDimensions = New SizeF(7F, 15F)
         AutoScaleMode = AutoScaleMode.Font
-        ClientSize = New Size(800, 450)
+        ClientSize = New Size(428, 182)
+        Controls.Add(textBoxFrench)
+        Controls.Add(btnExit)
         Controls.Add(btnFive)
         Controls.Add(btnFour)
         Controls.Add(btnThree)
@@ -110,5 +133,7 @@ Partial Class frmNumbers
     Friend WithEvents btnThree As Button
     Friend WithEvents btnFour As Button
     Friend WithEvents btnFive As Button
+    Friend WithEvents btnExit As Button
+    Friend WithEvents textBoxFrench As TextBox
 
 End Class
